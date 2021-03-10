@@ -1,0 +1,35 @@
+this is the index page
+
+<div>
+  Welcome, {{name}}
+</div>
+
+<div>
+  Good luck in your {{bootcamp}}
+</div>
+
+
+{{#if numBig}}
+<img src="celebration.jpeg"/>
+  number is greater than 15!
+{{else}}
+  number smaller than 15
+{{/if}}
+
+
+{{#unless numBig}}
+  this will only show if there is no image showing
+{{/unless}}
+
+
+<ul>
+  {{#each aniArray}}
+    {{#if this.long}}
+      <li>
+        {{this.name}} is longer than 3 letters
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h1>Another heading </h1>
